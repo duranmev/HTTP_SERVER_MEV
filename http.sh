@@ -9,5 +9,7 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 cp apachectlstart /data/data/com.termux/files/usr/bin/
+cp sshstart /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/apachectlstart
+chmod +x /data/data/com.termux/files/usr/bin/sshstart
 ssh -R 80:localhost:8080 ssh.localhost.run

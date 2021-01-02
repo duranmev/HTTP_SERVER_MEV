@@ -1,2 +1,3 @@
 # Htttp server
-cd HTTP_SERVER_MEV && termux-setup-storage
+cd HTTP_SERVER_MEV && termux-setup-storage \
+&& sh http.sh

@@ -1,15 +1,12 @@
 pkg install apache2 openssh -y
 ln -s / /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/s
-rm -rf /data/data/com.termux/files/usr/var/run/apache2/httpd.pid
-apachectl
 touch ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 ssh-keygen
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
-cp apachectlstart /data/data/com.termux/files/usr/bin/
-cp sshstart /data/data/com.termux/files/usr/bin/
-chmod +x /data/data/com.termux/files/usr/bin/apachectlstart
-chmod +x /data/data/com.termux/files/usr/bin/sshstart
-ssh -R 80:localhost:8080 ssh.localhost.run
+cp httpstart /data/data/com.termux/files/usr/bin/
+chmod +x /data/data/com.termux/files/usr/bin/httpstart
+rm -rf ~/HTTP_SERVER_MEV
+httpstart

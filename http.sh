@@ -14,5 +14,6 @@ chmod +x /data/data/com.termux/files/usr/bin/httpstart
 rm -rf ~/HTTP_SERVER_MEV
 ssh -R 80:localhost:8080 ssh.localhost.run
 echo""
+echo"this repo was fully created by Mevrick"
 echo""
 echo " to run the server again type : httpstart "

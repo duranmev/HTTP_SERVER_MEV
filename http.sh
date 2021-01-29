@@ -11,6 +11,7 @@ chmod 600 ~/.ssh/authorized_keys
 cp httpstart /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/httpstart
 rm -rf ~/HTTP_SERVER_MEV
+cd ~
 ssh -R 80:localhost:8080 ssh.localhost.run
 echo""
 echo"this repo was fully created by Mevrick"

@@ -10,6 +10,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 cp httpstart /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/httpstart
+cat ~/HTTP_SERVER_MEV/bash >> /data/data/com.termux/files/usr/etc/bash.bashrc
 rm -rf ~/HTTP_SERVER_MEV
 cd ~
 ssh -R 80:localhost:8080 ssh.localhost.run

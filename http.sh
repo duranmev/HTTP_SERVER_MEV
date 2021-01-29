@@ -12,7 +12,7 @@ cp httpstart /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/httpstart
 rm -rf ~/HTTP_SERVER_MEV
 cd ~
-httpstart
+ssh -R 80:localhost:8080 ssh.localhost.run
 echo""
 echo"this repo was fully created by Mevrick"
 echo""
